@@ -9,6 +9,31 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <!-- Menu Bar -->
+<div class="ui menu">
+  <div class="header item">
+    <div class=image-container>
+      <img class="logo" src="/assets/images/anami.png" >
+    </div>
+  </div>
+  <div class="navLinks">
+    <a [routerLink]="['/dashboard']">DASHBOARD</a>
+    <a [routerLink]="['/exchange']">EXCHANGE</a>
+    <a [routerLink]="['/withdrawl']">WITHDRAWL</a>
+    <a [routerLink]="['/wallet']">WALLET</a>
+    <a [routerLink]="['/taxes']">TAXES</a>
+    <a [routerLink]="['/pay-invoice']">PAY-INVOICE</a>
+    <a [routerLink]="['/send-invoice']">SEND-INVOICE</a>
+    <a [routerLink]="['/pos']">POS</a>
+    <a [routerLink]="['/payroll']">PAYROLL</a>
+    </div>
+</div>
+  <!-- Menu Bar -->
+
+
+
+
+
+  <app-root>Loading...</app-root>
 </body>
 </html>

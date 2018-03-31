@@ -1,7 +1,21 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  
+<div class="page-header">
+  <div class="container">
+    <div class="navLinks">
+      <a [routerLink]="['/dashboard']">DASHBOARD</a>
+      <a [routerLink]="['/exchange']">EXCHANGE</a>
+      <a [routerLink]="['/withdrawl']">WITHDRAWL</a>
+      <a [routerLink]="['/wallet']">WALLET</a>
+      <a [routerLink]="['/taxes']">TAXES</a>
+      <a [routerLink]="['/pay-invoice']">PAY-INVOICE</a>
+      <a [routerLink]="['/send-invoice']">SEND-INVOICE/a>
+      <a [routerLink]="['/pos']">POS</a>
+      <a [routerLink]="['/payroll']">PAYROLL</a>
+    </div>
+  </div>
+</div>
+
+<div id="content">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
 </div>
